@@ -2,8 +2,8 @@ import Image from "next/image";
 
 interface User{
     image: string;
-    title: number;
-    price: string;
+    title: string;
+    price: number;
     colors: string[];
 }
 

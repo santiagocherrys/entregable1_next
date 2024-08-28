@@ -36,9 +36,11 @@ export default function CardItem2(){
                     Shop now
                     </a>
                 </div>
-        </div>
+            </div>
 
         </div>
+
+        
         
 
         </>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CardItem from "@/components/Cards";
 import CardItem2 from "@/components/Cards2";
+import Collection from "@/components/Collection";
 
 export default function Home() {
 
@@ -9,6 +10,15 @@ export default function Home() {
   //   age: 30,
   //   email: "john.doe@example.com",
   // };
+
+  const collections: Collection[] = [
+    {image: "woman.jpg", title: "Women's", item: 23},
+    {image: "man.png", title: "Men's", item: 9},
+    {image: "jewelry.jpg", title: "Jewelry", item: 31},
+    {image: "sneakers.jpg", title: "Sneakers", item: 21},
+    {image: "ShoppingBag-Yellow.jpg", title: "Bags", item: 5},
+    {image: "glasseswoman.png", title: "Glasses", item: 14},
+  ]
 
   const users: User[] = [
     { image: "image1.png", title: "Ribbed Tank Top", price: 16.95 , colors: ["bg-orange-500","bg-black","bg-white"] },
@@ -21,8 +31,14 @@ export default function Home() {
     { image: "image8.png", title: "Loose Fit Hoodie", price: 9.9, colors: ["bg-white","bg-black","bg-neutral-300"] },
     
   ];
+
   return (
     <>
+    <div className="flex flex-wrap gap-5 justify-center">
+      {collections.map((collection, index) => (
+        <Collection key={index} collection={collection} />
+      ))}
+    </div>
     <CardItem2 />
     <div className="flex flex-wrap gap-5">
       {users.map((user, index) => (
