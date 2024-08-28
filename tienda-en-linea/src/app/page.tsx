@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CardItem from "@/components/Cards";
+import CardItem2 from "@/components/Cards2";
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
   ];
   return (
     <>
+    <CardItem2 />
     <div className="flex flex-wrap gap-5">
       {users.map((user, index) => (
         <CardItem key={index} user={user} />
