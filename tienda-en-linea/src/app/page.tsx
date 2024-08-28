@@ -2,6 +2,7 @@ import Image from "next/image";
 import CardItem from "@/components/Cards";
 import CardItem2 from "@/components/Cards2";
 import Collection from "@/components/Collection";
+import Shipping from "@/components/Shipping";
 
 export default function Home() {
 
@@ -45,6 +46,7 @@ export default function Home() {
         <CardItem key={index} user={user} />
       ))}
     </div>
+    <Shipping />
     </>
     
   );
