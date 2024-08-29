@@ -3,6 +3,7 @@ import CardItem from "@/components/Cards";
 import CardItem2 from "@/components/Cards2";
 import Collection from "@/components/Collection";
 import Shipping from "@/components/Shipping";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -47,6 +48,8 @@ export default function Home() {
       ))}
     </div>
     <Shipping />
+
+    <Footer/>
     </>
     
   );
